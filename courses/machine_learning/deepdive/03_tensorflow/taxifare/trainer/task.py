@@ -22,7 +22,7 @@ import os
 # for python2
 # import model
 # for python3
-from . import model
+from . import my_model as model
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
