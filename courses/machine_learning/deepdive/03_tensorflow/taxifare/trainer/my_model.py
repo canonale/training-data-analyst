@@ -64,7 +64,7 @@ def train_and_evaluate(args):
     estimator = tf.estimator.DNNRegressor(
         hidden_units=args['hidden_units'],
         feature_columns=feature_cols,
-        model_dir=args['model_dir']
+        model_dir=args['output_dir']
     )
     # TODO: Trainner
     train_spec = tf.estimator.TrainSpec(
